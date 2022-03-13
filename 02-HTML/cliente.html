@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!-- Ícono de pestaña -->
+        <link href="img/Logo.png" rel="icon">
+        <!-- Hoja de estilos -->
+        <link rel="stylesheet" type="text/css" href="./css/estilo.css" media="screen">
+        <!-- Importar fuentes -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Nunito&display=swap" rel="stylesheet">
+
+        <title>Pastel del Zodiaco</title>
+    </head>
+    <body>
+        <header>
+            <img src="img/Logo.png" width="250">
+            <h1>Pastelería del zodiaco</h1>
+        </header>
+
+        <section>
+            <h2>
+                ¡¡Bienvenido!! <br>
+                Dale un vistazo a la astrologia pastelera
+            </h2>
+
+            <article>
+                <h3>Descubre a que saben los elementos</h3>
+
+                <ul>
+                    <li class="sabor">
+                        Agua <i>($560)</i><br>
+                        Mase base de leche condensada y chocolate blanco con relleno nuestra cremosa mezcla de queso y moras azules
+                    </li>
+
+                    <li class="sabor">
+                        Tierra <i>($490)</i><br>
+                        Pastel de chocolate amargo con relleno de ganache de chocolate
+                    </li>
+
+                    <li class="sabor">
+                        Fuego <i>($545)</i><br>
+                        Pastel de red velvet anuestro estilo, con relleno cremoso sabor piña
+                    </li>
+
+                    <li class="sabor">
+                        Aire <i>($490)</i><br>
+                        Pastel de miel con relleno de queso crema y durazno
+                    </li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Conoce las constelaciones que engalanan tu pastel</h3>
+
+                <ul class="decoracion">
+                    <li>Decorado con merengue <i>($200)</i></li>
+                    <li>Decorado con fondant <i>($250)</i></li>
+                    <li>Decorado con chantilly <i>($230)</i></li>
+                    <li>Figurilla con signo zodiacal <i>($180)</i></li>
+                </ul>
+            </article>
+
+            <!-- Formulario de pedido -->
+            <form action="" method="">
+                <h3>Prepara tu pedido</h3>
+
+                <p>Elige tus sabores:</p>
+
+                <!-- Definición de checkbox de sabores -->
+                <input type="checkbox" name="ck_sabor" id="ck_agua">
+                <!-- Etiqueta para entrada -->
+                <label for="ck_agua">Agua</label>
+                
+                <input type="checkbox" name="ck_sabor" id="ck_tierra">
+                <label for="ck_tierra">Tierra</label>
+
+                <input type="checkbox" name="ck_sabor" id="ck_fuego">
+                <label for="ck_fuego">Fuego</label>
+
+                <input type="checkbox" name="ck_sabor" id="ck_aire">
+                <label for="ck_aire">Aire</label>
+
+                <!-- Sección de adornos -->
+                <p>Elige los adornos de tu pastes</p>
+                <input type="checkbox" name="ck_adorno" id="ck_merengue">
+                <label for="ck_merengue">Merengue</label>
+
+                <input type="checkbox" name="ck_adorno" id="ck_fondant">
+                <label for="ck_fondant">Fondant</label>
+
+                <input type="checkbox" name="ck_adorno" id="ck_chantilly">
+                <label for="ck_chantilly">Chantilly</label>
+
+                <input type="checkbox" name="ck_adorno" id="ck_figurilla">
+                <label for="ck_figurilla">Figurilla</label>
+
+                <!-- Sección de información del cliente -->
+                <p>Compartenos tu información de contacto</p>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre"><br>
+
+                <label for="telefono">Telefono</label>
+                <input type="tel" id="telefono"><br>
+
+                <label for="email">Email</label>
+                <input type="email" id="email"><br>
+
+                <label for="descripción">Descripción</label>
+                <input type="text" id="descripcion"><br>
+
+                <input type="reset" value="Borrar">
+                <input type="submit" value="Ordenar">
+
+            </form>
+        </section>
+
+        <footer>
+            <span>
+                <p>Puedes encontrarnos en: <br>
+                    Calle Siempre Viva #123 <br>
+                </p>
+            </span>
+
+            <span>
+                <p>Nuestro Horario de atención: <br>
+                    Lunes a Viernes: 11:00 a 22:00 hrs. <br>
+                    Sabados y Domingos: 12:00 a 22:00 hrs. 
+                </p>
+
+                <p>
+                    Nuestro telefono: 01-800-1871
+                </p>
+            </span>
+        </footer>
+    </body>
+</html>

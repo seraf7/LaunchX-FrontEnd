@@ -1,0 +1,68 @@
+body {
+    background-color: #b39de9;
+    margin: 2em;
+    font-family: 'Nunito', sans-serif;
+}
+
+header {
+    background-color: #7537c0;
+    margin: -2em -2em 3em -2em;
+    padding: 2em;
+    text-align: center;
+}
+
+article {
+    margin-bottom: 2em;
+}
+
+h1, h2 {
+    font-family: 'Courgette', cursive;
+    text-align: center;
+    color: #fddd2a;
+}
+
+li {
+    display: inline-block;
+    width: 21%;
+    vertical-align: middle;
+    border-style: dotted;
+    border-color: #fff57f;
+    padding: 1em;
+}
+
+.sabor {
+    height: 150px;
+}
+
+label {
+    padding-right: 1em;
+    display: inline-block;
+    width: 120px;
+}
+
+input {
+    margin-bottom: 1em;
+    background-color: #ffe54d;
+}
+
+span {
+    text-align: right;
+    width: 48%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+footer {
+    background-color: #7537c0;
+    margin: 2em -2em -2em -2em;
+    padding: 2em;
+}
+
+td, th {
+    padding: 0.5em 1.5em;
+}
+
+table th, td{
+    border: 3px solid #fff57f;
+    border-radius: 10px;
+}

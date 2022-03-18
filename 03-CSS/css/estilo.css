@@ -28,6 +28,25 @@ p{
     font-weight: bold;
 }
 
+button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #eaefff;
+    color: #1f3e72;
+    font-size: medium;
+    font-weight: bold;
+    text-align: center;
+    padding: 1em;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #1f3e72;
+    color: white;
+}
+
 /* Estilo para elementos de barra de navegación */
 header {
     background: #ffffffb4;
@@ -47,13 +66,19 @@ navbar ul {
 }
 
 navbar ul li {
-    float: right;
+    float: left;
     font-size: large;
 }
 
 navbar ul li a {
     display: block;
     padding: 20px;
+}
+
+.btn-azul {
+    background-color: #1451b9;
+    color: white;
+    border-radius: 5px;
 }
 
 .logo {
@@ -93,6 +118,8 @@ section {
 .contenedor-vacunas {
     display: flex;
     justify-content: space-around;
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
 
 .logo-vacuna {
@@ -127,6 +154,15 @@ section {
     width: 400px;
     padding-left: -10em;
     float: left;
+}
+
+.parrafo > * {
+    vertical-align: top;
+}
+
+.parrafo h4 {
+    display: inline-block;
+    vertical-align: top;
 }
 
 /*Estilo para tarjetas*/
@@ -170,3 +206,14 @@ summary {
     align-items: center;
 }
 /*===================================*/
+
+/* Tarjetas de contacto */
+.tarjeta p {
+    display: inline-block;
+}
+
+.tarjeta b {
+    font-size: medium;
+    color: #1f3e72;
+}
+/*====================================*/

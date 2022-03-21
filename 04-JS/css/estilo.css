@@ -1,0 +1,88 @@
+body {
+    padding: 2em;
+    margin: 0;
+    background-color: #3d020d;
+    display: flex;
+    justify-content: center;
+    font-family: 'Gruppo', cursive;
+}
+
+button {
+    font-family: 'Gruppo', cursive;
+    font-weight: bolder;
+}
+
+h1, h2, h3 {
+    font-family: 'Press Start 2P', cursive;
+    clear: both;
+}
+
+.tapa {
+    background-color: #dd082f;
+    display: block;
+    width: 520px;
+    height: 650px;
+    margin: 0 1em;
+    padding: 2em;
+}
+
+.contenedor {
+    margin-bottom: 1.5em;
+}
+
+.pantalla {
+    background-image: url("../img/estatica.jpg");
+    width: 460px;
+    height: 300px;
+    padding: 1em;
+    margin: 2em auto;
+    text-align: center;
+    border-color: #b0b0b0;
+    border-width: 15px;
+    border-style: solid;
+    border-radius: 15px 0 0 15px;
+}
+
+.poke_img {
+    width: 250px;
+    align-self: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.circulo-l {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+.circulo-s {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    vertical-align: top;
+    margin-left: 1em;
+}
+
+.barra {
+    border-radius: 15px;
+    width: 100px;
+    height: 30px;
+    vertical-align: top;
+    margin-left: 1em;
+}
+
+.buscar {
+    background-color: #ffcc02;
+    height: 40px;
+    width: 350px;
+    border-radius: 15px;
+    vertical-align: top;
+    padding: 0.5em;
+    margin-right: 1.5em;
+    font-family: 'Gruppo', cursive;
+    font-weight: bold;
+    text-align: left;
+    font-size: medium;
+}

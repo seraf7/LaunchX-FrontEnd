@@ -25,8 +25,8 @@
                 <button class="circulo-s"></button>
             </div>
             <!-- Pantalla para imagen -->
-            <div class="pantalla">
-                <img class="poke_img" src="./img/silueta.png">
+            <div class="pantalla" id="pantalla">
+                <img class="poke_img" id="imgPokemon" src="./img/silueta.png">
                 <h1 id="nombrePokemon">???</h1>
             </div>
             <!-- Contenedor de botones -->
@@ -38,12 +38,15 @@
             <!-- Contenedor de busqueda -->
             <div class="contenedor">
                 <input class="buscar" type="text" placeholder="Nombre del pokemon" id="pokeName" name="pokeName">
-                <button class="circulo-l" onclick="saludo()">GO!</button>
+                <button class="circulo-l" onclick="buscaPokemon()">GO!</button>
             </div>
         </section>
 
         <section class="tapa">
-            <h1>Tapa 2</h1>
+            <div class="pantalla-info" id="pantalla-info">
+                <h3>Tipo: </h3>
+                
+            </div>
         </section>
 
         <script src="./JS/pokedex.js" type="text/javascript"></script>

@@ -43,6 +43,23 @@ h1, h2, h3 {
     border-radius: 15px 0 0 15px;
 }
 
+.pantalla-info {
+    background-color: white;
+    width: 460px;
+    height: 200px;
+    padding: 1em;
+    margin: 2em auto;
+    border-color: black;
+    border-width: thin;
+    border-style: solid;
+    border-radius: 15px;
+}
+
+.pantalla-activa {
+    background-color: white;
+    background-image: none;
+}
+
 .poke_img {
     width: 250px;
     align-self: center;
@@ -86,3 +103,5 @@ h1, h2, h3 {
     text-align: left;
     font-size: medium;
 }
+
+/* Estilo para barra de progreso */

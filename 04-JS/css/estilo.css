@@ -104,4 +104,22 @@ h1, h2, h3 {
     font-size: medium;
 }
 
+/* Estilo para etiquetas de tipo */
+.tipo-head {
+    display: inline-block;
+}
+
+.contenedor-tipo {
+    display: inline-block;
+}
+
+.tipo {
+    display: inline-block;
+    background-color: #b0b0b0;
+    margin-bottom: 3px;
+    font-weight: bolder;
+    border-radius: 10px;
+    padding: 8px;
+    margin-right: 1em;
+}
 /* Estilo para barra de progreso */

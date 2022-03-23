@@ -62,6 +62,7 @@ const muestraDatos = (pokemon) => {
     // Establece información del pokemon
     nombrePokemon.innerHTML = pokemon.name;
     imgPokemon.src = pokemon.sprites.other["official-artwork"].front_default;
+    agregaTipo(pokemon.types);
     
     pantalla.classList.add('pantalla-activa');
 }
@@ -78,4 +79,22 @@ const apagarPokedex = () => {
     imgPokemon.src = "./img/silueta.png";
 
     pantalla.classList.remove('pantalla-activa');
+}
+
+// Función para agregar tipos del pokemon
+const agregaTipo = (types) => {
+    let pantalla = document.getElementById("contenedor-tipo");
+
+    // Limpia contenedor
+    while(pantalla.firstChild){
+        pantalla.removeChild(pantalla.firstChild);
+    };
+
+    types.forEach(elemento => {
+        let tipo = document.createElement("p");
+        tipo.setAttribute("class", "tipo");
+        tipo.innerHTML = elemento.type.name;
+
+        pantalla.appendChild(tipo);
+    });
 }

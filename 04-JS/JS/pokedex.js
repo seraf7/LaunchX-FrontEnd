@@ -63,6 +63,7 @@ const muestraDatos = (pokemon) => {
     nombrePokemon.innerHTML = pokemon.name;
     imgPokemon.src = pokemon.sprites.other["official-artwork"].front_default;
     agregaTipo(pokemon.types);
+    cargaStats(pokemon.stats);
     
     pantalla.classList.add('pantalla-activa');
 }
@@ -96,5 +97,15 @@ const agregaTipo = (types) => {
         tipo.innerHTML = elemento.type.name;
 
         pantalla.appendChild(tipo);
+    });
+}
+
+// Función para agregar estadísticas
+const cargaStats = (stats) => {
+    stats.forEach(elemento => {
+        console.log(elemento.stat.name);
+        
+        let barStat = document.getElementById(elemento.stat.name);
+        barStat.setAttribute("value", elemento.base_stat);
     });
 }

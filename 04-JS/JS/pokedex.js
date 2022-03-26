@@ -41,7 +41,6 @@ const consultaAPI = (pokeName) => {
     .then((data) => {
         // Valida que se recibieron datos
         if(data){
-            console.log(data);
             muestraDatos(data);
         }
     })
@@ -64,6 +63,7 @@ const muestraDatos = (pokemon) => {
     imgPokemon.src = pokemon.sprites.other["official-artwork"].front_default;
     agregaTipo(pokemon.types);
     cargaStats(pokemon.stats);
+    cargaMovimientos(pokemon.moves);
     
     pantalla.classList.add('pantalla-activa');
 }
@@ -102,10 +102,26 @@ const agregaTipo = (types) => {
 
 // Función para agregar estadísticas
 const cargaStats = (stats) => {
-    stats.forEach(elemento => {
-        console.log(elemento.stat.name);
-        
+    stats.forEach(elemento => {        
         let barStat = document.getElementById(elemento.stat.name);
         barStat.setAttribute("value", elemento.base_stat);
+    });
+}
+
+// Función para agregar lista de movimientos
+const cargaMovimientos = (moves) => {
+    let pantalla = document.getElementById("pantalla-mov");
+
+    // Limpia contenedor
+    while(pantalla.firstChild){
+        pantalla.removeChild(pantalla.firstChild);
+    };
+
+    moves.forEach(elemento => {
+        let tarjeta = document.createElement("div");
+        tarjeta.setAttribute("class", "tarjeta-mov");
+        tarjeta.innerHTML = elemento.move.name;
+
+        pantalla.appendChild(tarjeta);
     });
 }

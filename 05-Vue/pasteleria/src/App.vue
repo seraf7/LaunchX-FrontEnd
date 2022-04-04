@@ -1,7 +1,12 @@
 <template>
+  <header>
+    <img src="./assets/logo.png" width="250">
+    <h1>Pastelería del zodiaco</h1>
+  </header>
+
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link>
   </nav>
   <router-view/>
 </template>
@@ -27,4 +32,6 @@ nav a {
 nav a.router-link-exact-active {
   color: #42b983;
 }
+
+@import './css/estilo.css';
 </style>
